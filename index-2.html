@@ -67,15 +67,15 @@
 
 	<div class="background" id="background">
 		<div class="content-container" >
-			<!-- <div class="header-container">
+			<div class="header-container">
 				<div class="blocks"></div>
 				<div class="author-name" id="categories"></div>
-			</div> -->
+			</div>
 			<div class="separate">
 				<div id="content-title1" class="content-title">Title</div>
 			</div>
 			<div class="footer-container">
-				<!-- <div class="author-name" id="author-name">@Author</div> -->
+				<div class="author-name" id="author-name">@Author</div>
 				<div class="elc">
 					Anang Muklhisin
 					<div class="img-logo" style="display: none;">
@@ -120,12 +120,12 @@
 			}); 
 
 			// Begin Here
-			var input = document.getElementById("input"), judul1 = document.getElementById("title1"), bgcl = document.getElementById("bg-color"), backgroundSty = document.getElementById("bg-styles");
+			var input = document.getElementById("input"), judul1 = document.getElementById("title1"), author = document.getElementById("author"), category = document.getElementById("category"), bgcl = document.getElementById("bg-color"), backgroundSty = document.getElementById("bg-styles"), categories = document.getElementById("categories");
 
 			// Keyup
 			input.onkeyup = function() {
 				document.getElementById("content-title1").innerHTML = judul1.value;
-				
+				document.getElementById("author-name").innerHTML = "@" + author.value;
 			};
 
 			
