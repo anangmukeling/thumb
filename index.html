@@ -46,27 +46,27 @@
 			<option value="sty12">Background 12</option>
 			<option value="sty13">Background 13</option>
 		</select>
-		<input type="text" id="label1" placeholder="Post Label">
-		<br/>
+		<!-- <input type="text" id="label1" placeholder="Post Label">
+		<br/> -->
 		<input type="text" id="title1" placeholder="Post Title">
 		<br/>
-		<input type="text" id="author" placeholder="Author Name">
-		<br/>
+		<!-- <input type="text" id="author" placeholder="Author Name">
+		<br/> -->
 		<input type="text" id="btitle1" placeholder="Blog Title">
 	</div>
 
 
 	<div class="background" id="background">
 		<div class="content-container" >
-			<div class="header-container">
+			<!-- <div class="header-container">
 				<div class="blocks" id="blocks"></div>
 				<div class="author-name" id="categories">Post Label</div>
-			</div>
+			</div> -->
 			<div class="separate">
 				<div id="content-title1" class="content-title">Post Title</div>
 			</div>
 			<div class="footer-container">
-				<div class="author-name" id="author-name">@Author Name</div>
+				<!-- <div class="author-name" id="author-name">@Author Name</div> -->
 				<div class="elc" id="elc">
 					Anang Muklhisin
 					<div class="img-logo" style="display: none;">
@@ -114,14 +114,14 @@
 			});
 
 			// Begin Here
-			var input = document.getElementById("input"), judul1 = document.getElementById("title1"), author = document.getElementById("author"), category = document.getElementById("category"), bgcl = document.getElementById("bg-color"), backgroundSty = document.getElementById("bg-styles"), categories = document.getElementById("categories");
+			var input = document.getElementById("input"), judul1 = document.getElementById("title1"),, bgcl = document.getElementById("bg-color"), backgroundSty = document.getElementById("bg-styles");
 
 			// Keyup
 			input.onkeyup = function() {
-				document.getElementById("categories").innerHTML = label1.value;
+			
 				document.getElementById("content-title1").innerHTML = judul1.value;
 				document.getElementById("elc").innerHTML = btitle1.value;
-				document.getElementById("author-name").innerHTML = "@" + author.value;
+				
 			};
 
 			
